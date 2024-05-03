@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STB.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>SMASH THE BUTTON</title>
+</head>
+<body>
+
+    
+<div class="container-shadowbox">
+    <div class="head-title">
+        <h1>SMASH THE BUTTON</h1>
+    </div>
+<div class="imgfist">
+    <img src="hazmka2tgl-no-background.png" alt="firefist">
+</div>
+<div class="description">
+<p>Click the space bar for 10 seconds. Can you reach 100 clicks in 10 seconds?</p>
+</div>
+
+<div class="container-spacebarclick">
+    <p>You have clicked space bar <span id="clickcounter"><b> 0</b></span> times</p>
+</div>
+<div class="container-time"><i class="fa-solid fa-clock"></i> <span id="timer">Time:0.0s</span>
+</div>    
+<div class="container-results">
+ 
+    <div id="averageDisplay"></div> <!-- Add this line to display average clicks per second -->
+</div> 
+
+<div class="container-start">
+    <button class="startbutton"><span id="startrefreshdisplay"><i id="playIcon" class="fa-solid fa-play" style="color: #ffffff;"></i> Start</span></button>
+
+ <button class="home" onclick="homeclick()"><i class="fa fa-home" aria-hidden="true"></i>  </button>
+</div>
+
+ 
+<div class="container-home"></div>
+
+ 
+
+
+    </div>
+    <!-- <div class="homerestart-container">
+        <div class="horizontal-flex">
+          
+   
+
+            <button class="submitAnswer btn" onclick="submitGuess()" required>Submit</button>
+    
+            <button class="refresh-btn btn" onclick="refreshClick()">
+                <i id="refreshButton" class="fa fa-refresh fa-2x" aria-hidden="true"></i>
+            </button>
+       
+        </div>
+    </div>
+
+  -->  <audio id="homecardAudio">
+        <source src="shooting-sound-fx-159024.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio> 
+
+    <audio id="spacebarAudio">
+        <source src="click-47609.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio> 
+</body>
+<script src="STB.js"></script>
+</html>
